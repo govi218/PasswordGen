@@ -2,12 +2,12 @@ import random
 import array
 import string
 
-heid = open("h.txt", "r");
-a1 = array.array('B', 'Govind Mohan')
+file = open("PATH_TO_FILE", "r");
+a1 = array.array('B', 'SEED_TEXT')
 r = random.randint(0,15)
 c = 0
 
-for line in heid:
+for line in file:
 	word = line.split(' ')
 	L = list(word)
 	a = list(L[0])
